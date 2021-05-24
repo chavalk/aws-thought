@@ -58,6 +58,21 @@ const ThoughtForm = () => {
           className="form-input col-12 col-md-9"
           onChange={handleChange}
         ></textarea>
+        <label className="form-input col-12 p-1">
+          Add an image to your thought:
+          <input
+            type="file"
+            ref={fileInput}
+            className="form-input p-2"
+          />
+          <button
+            className="btn"
+            onClick={handleImageUpload}
+            type="submit"
+          >
+            Upload
+          </button>
+        </label>
         <button className="btn col-12 col-md-3" type="submit">
           Submit
           </button>
