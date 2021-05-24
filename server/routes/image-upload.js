@@ -29,3 +29,5 @@ router.post('/image-upload', upload, (req, res) => {
         res.json(data);
     });
 });
+
+module.exports = router;
