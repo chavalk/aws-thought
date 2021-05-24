@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 const ThoughtForm = () => {
   const [formState, setFormState] = useState({ username: '', thought: '' });
   const [characterCount, setCharacterCount] = useState(0);
+  const fileInput = useRef(null);
 
   // update state based on form input changes
   const handleChange = event => {
@@ -12,6 +13,15 @@ const ThoughtForm = () => {
     }
   };
 
+  // Handle image upload
+  const handleImageUpload = event => {
+    event.preventDefault();
+    const data = new FormData();
+    data.append('image', fileInput.current.files[0]);
+    // Send image file to endpoint with the postImage function
+
+  }
+  
   // submit form
   const handleFormSubmit = event => {
     event.preventDefault();
