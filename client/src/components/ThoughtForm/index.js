@@ -65,7 +65,6 @@ const ThoughtForm = () => {
     <div>
       <p className={`m-0 ${characterCount === 280 ? 'text-error' : ''}`}>
         Character Count: {characterCount}/280
-          {/* {error && <span className="ml-2">Something went wrong...</span>} */}
       </p>
       <form
         className="flex-row justify-center justify-space-between-md align-stretch"
