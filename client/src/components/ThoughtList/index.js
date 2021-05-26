@@ -31,6 +31,7 @@ const ThoughtList = ({ thoughts, title }) => {
                 <img
                   className="mt-3 ml-4 thought-image"
                   src={thought.image} alt="S3 bucket response"
+                  style={{ width: 300 }}
                 />
               </p>
             }
